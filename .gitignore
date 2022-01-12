@@ -3,7 +3,7 @@
 .vscode/
 
 #Ignore config file
-config
+config.ini
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

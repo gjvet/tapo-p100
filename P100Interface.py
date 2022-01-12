@@ -1,16 +1,13 @@
 import utils.TapoPlug as tapo
 import pprint
+import configparser
 import sys
 import time
 
 def readConfig() -> tuple[str,str,str]:
-    with open("config") as file:
-        config = file.read()
-    elements = config.splitlines()
-    ip = elements[0]
-    email = elements[1]
-    password = elements[2]
-    return ip, email, password
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+    return config["DEFAULT"]["IP"], config["DEFAULT"]["EMAIL"], config["DEFAULT"]["PASSWORD"]
 
 def connect() -> tapo.P100:
     ip, email, password = readConfig()
