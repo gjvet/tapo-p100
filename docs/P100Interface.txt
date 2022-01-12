@@ -1,0 +1,9 @@
+
+Command Line Tool for Controlling a Tapo P100 Plug
+
+Options:
+    on: turn the plug on
+    off: turn the plug off
+    status: get information about the current state of the plug
+    name: get the name of the plug
+    timer [minutes]: turn the plug on for the specified number of minutes
