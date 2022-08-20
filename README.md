@@ -1,4 +1,4 @@
-# Tapo P100 Controller
+# Tapo P100 Controller
 
 A collection of Python scripts for controlling a Tapo P100 smart plug. A lot of the backend is modified code from this [repo](https://github.com/fishbigger/TapoP100). The main way to interact with these libraries is to run the `P100Interface.py` file with any of the supported command line options:
 
@@ -16,7 +16,7 @@ Options:
 
 The above message can be displayed by running the file with no arguments or the `help` argument.
 
-# First Use
+## First Use
 
 Before running the `P100Interface.py` script, modify the `config.ini` file to contain the IP of the smart plug and email address and password for the account associated with the device:
 
@@ -27,7 +27,7 @@ EMAIL = example@email.com
 PASSWORD = top_secret
 ```
 
-# Dependencies
+## Dependencies
 
 ```bash
 python3 -m pip install pycryptodome pkcs7
